@@ -34,23 +34,11 @@ export default class FetchRandomUser extends React.Component {
                 <container>
 
                     <table class="table table-dark">
-                        {/* <thead>
-                            <div class="col-lg-10">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Number</th>
-                                </tr>
-                            </div>
-                        </thead> */}
-
                         <tbody>
                             <div class="col-lg-10">
                                 <tr>
-                                    
-                                    <img src={person.picture.medium} />
+
+                                    <img src={person.picture.medium} alt="Random Person" />
                                     <td>{person.name.title}</td>
                                     <td>{person.name.first}</td>
                                     <td>{person.name.last}</td>
@@ -58,11 +46,8 @@ export default class FetchRandomUser extends React.Component {
 
                                 </tr>
                             </div>
-
                         </tbody>
-
                     </table>
-
                 </container>
             </div >
         ))
